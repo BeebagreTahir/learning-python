@@ -103,11 +103,33 @@
 
 
 #write program to find the factorial of frist n number using for lopp
-n = 5
-f = 1
+# n = 5
+# f = 1
 
-for i in range(1,n+1):
-    f = f * i
-print(f)
+# for i in range(1,n+1):
+#     f = f * i
+# print(f)
+
+
+
+
+# ------------> Contnue in loop mean skip the next step <--------------
+
+# i = 1
+# while (i <= 10):                #to print odd numbers
+#     if(i%2 == 0):
+#         i += 1
+#         continue # skip
+#     print(i)
+#     i +=1
+
+
+i = 1
+while (i <= 10 ):
+    if(i%2 != 0):
+        i += 1
+        continue
+    print(i)
+    i +=1
 
 
