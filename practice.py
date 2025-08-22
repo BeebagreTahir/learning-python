@@ -109,12 +109,86 @@
 #     i +=1
 
 
-list = [1,4,9,16,25,36,49,64,81,100]
-x = 49
-i = 0
-for el in list:
-    if(el == x):
-        print("Found", el , "At index",i )
-        break
-    i += 1
+# list = [1,4,9,16,25,36,49,64,81,100]
+# x = 49
+# i = 0
+# for el in list:
+#     if(el == x):
+#         print("Found", el , "At index",i )
+#         break
+#     i += 1
+
+
+
+# for i in range (2,100,2):
+#     print(i)
+
+
+# for i in range(1,101):
+#     print(i)
+    
+# n = 9
+
+# for i in range(1,11):
+#     print(i * n)
+
+
+# i = 1
+# n = 0
+# while(i <= 5):
+#     n = n + i
+#     i = i + 1
+    
+# print(n)
+
+# n = 1
+
+# for i in range(1,6):
+#     n = n * i 
+# print(n)
+
+
+# n = 1
+# i = 1
+
+# while( i <= 5):
+#     n = n * i
+#     i += 1
+# print(n)
+
+# for i in range( 1,11):
+#     print("*"*i)
+
+#-------------Q1<-----------
+# i = 1
+# n = 5
+
+# for i in range(1,n):
+#     n *= i
+# print(n)
+
+#------------------>Q2<------------
+list = [1,3,5,7,9,2,4,6,8,10]
+idx = 0
+for i in list:
+    a = (i%2 == 0)
+    if(a == True):
+        print("There are even number", i)
+    if( a== False):
+        print("These are odd number", i )
+    idx += 1
+    
+#------------>Q3<-----------
+
+
+
+st = "khanbaba"
+
+i = 7
+
+while(i >= 0):
+    print(st[i])
+    i -=1
+    
+
     

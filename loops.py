@@ -36,6 +36,27 @@
 #     i += 1
 
 
+#> Contnue in loop mean skip the next step <
+
+# i = 1
+# while (i <= 10):                #to print odd numbers
+#     if(i%2 == 0):
+#         i += 1
+#         continue # skip
+#     print(i)
+#     i +=1
+
+
+# i = 1
+# while (i <= 10 ):
+#     if(i%2 != 0):         # to print even numbers
+#         i += 1
+#         continue
+#     print(i)
+#     i +=1
+
+
+
 #continue means skip
   
   
@@ -113,23 +134,68 @@
 
 
 
-# ------------> Contnue in loop mean skip the next step <--------------
 
-# i = 1
-# while (i <= 10):                #to print odd numbers
-#     if(i%2 == 0):
-#         i += 1
-#         continue # skip
-#     print(i)
-#     i +=1
+#-------------Q1 Factorial with Loop: Write a program that takes a number n and calculates its factorial using a for loop.<-----------
+i = 1
+fact = 5
+n = 1
 
+for i in range(1,fact+1):
+    n *= i
+print(n)
+
+#------------------>Q2 Count Even and Odd Numbers: Write a program that takes a list of numbers and counts how many are even and how many are odd using a loop.<------------
+list = [1,3,5,7,9,2,4,6,8,10]
+idx = 0
+for i in list:
+    a = (i%2 == 0)
+    if(a == True):
+        print("There are even number", i)
+    if( a== False):
+        print("These are odd number", i )
+    idx += 1
+    
+#------------>Q3 Count Even and Odd Numbers: Write a program that takes a list of numbers and counts how many are even and how many are odd using a loop.<-----------
+
+
+
+st = "khanbaba"
+
+i = 7
+
+while(i >= 0):
+    print(st[i])
+    i -=1
+    
+    
+# Q4: Make a loop that prints a triangle of stars
 
 i = 1
-while (i <= 10 ):
-    if(i%2 != 0):
+
+while (i <= 5):
+    print("*"*i)
+    i += 1
+
+# Q5 Write a program that prints numbers from 1 to 20, but only the multiples of 3.
+
+for i in range(1,20):
+    if(i%3 == 0):
+        print(i)
+        
+        
+# Q6 Take a string from the user and count how many vowels (a, e, i, o, u) are in it using a loop
+
+st = "beebagretahir"
+
+i = 0
+
+for char in st:
+    if(char in "a e i o u"):
+        print(char)
         i += 1
-        continue
-    print(i)
-    i +=1
+print("total vowels ", i)
 
+#Q7 Decreasing stars
 
+for i in range(6,0,-1):
+    print("*"*i)
