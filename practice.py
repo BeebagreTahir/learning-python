@@ -159,7 +159,7 @@
 # for i in range( 1,11):
 #     print("*"*i)
 
-#-------------Q1<-----------
+#-------------Q1 Factorial with Loop: Write a program that takes a number n and calculates its factorial using a for loop.<-----------
 # i = 1
 # n = 5
 
@@ -167,28 +167,188 @@
 #     n *= i
 # print(n)
 
-#------------------>Q2<------------
-list = [1,3,5,7,9,2,4,6,8,10]
-idx = 0
-for i in list:
-    a = (i%2 == 0)
-    if(a == True):
-        print("There are even number", i)
-    if( a== False):
-        print("These are odd number", i )
-    idx += 1
+#------------------>Q2 Count Even and Odd Numbers: Write a program that takes a list of numbers and counts how many are even and how many are odd using a loop.<------------
+# list = [1,3,5,7,9,2,4,6,8,10]
+# idx = 0
+# for i in list:
+#     a = (i%2 == 0)
+#     if(a == True):
+#         print("There are even number", i)
+#     if( a== False):
+#         print("These are odd number", i )
+#     idx += 1
     
-#------------>Q3<-----------
+#------------>Q3 Count Even and Odd Numbers: Write a program that takes a list of numbers and counts how many are even and how many are odd using a loop.<-----------
 
 
 
-st = "khanbaba"
+# st = "khanbaba"
 
-i = 7
+# i = 7
 
-while(i >= 0):
-    print(st[i])
-    i -=1
+# while(i >= 0):
+#     print(st[i])
+#     i -=1
     
 
+
+# with open("practice.txt","w") as f:
+#     f.write("Hi everyone\nwe are learning File I/O")
+#     f.write("\nusing Java.\nI like programming in Java.")
     
+
+# with open("practice.txt","r") as f:
+#     data = f.read()
+#     new_data = data.replace("Java","Python")
+#     print(new_data)
+    
+# with open("practice.txt","w") as f:
+#     f.write(new_data)
+
+# def finding_data():
+#     i = 0
+#     with open("practice.txt","r") as f:
+#         data = f.read()
+       
+#         if(data.find("learning") != -1):
+#             print("Found",i) 
+#         i += 1  
+                
+# finding_data()     
+
+
+# def finding_line():
+#     word = "learning"
+#     data = True
+#     line_no = 1
+#     with open("practice.txt","r") as f:
+#         while data:
+#             data = f.readline()
+#             if(word in data):
+#                 print(line_no)
+#             else:
+#                 print(-1)
+#             line_no +=1
+            
+# finding_line()
+                
+                
+# def number():
+#     with open("practice.txt","r") as f:
+#         data = f.read()
+#         new_data = data.split(",")
+#         for i in new_data:
+#             if(int(i) % 2 == 0):
+#                 print("Even")
+#             else:
+#                 print("Odd")
+            
+# number()
+
+
+# def numbers():
+#     with open("practice.txt","r") as f:
+#         data = f.read()
+#         num = ""
+#         for i in range(len(data)):
+#             if(data[i] == ","):
+#                 print(int(num))
+#                 num = ""
+#             else:
+#                 num += data[i]
+# numbers()        
+                
+# def number():
+#     with open("practice.txt", "r") as f:
+#         data = f.read()
+#         num = data.split(",")
+#         for i in num:
+#             if(int(i)%2 == 0):
+#                 print("Even")
+#             else:
+#                 print("Odd")
+
+# number()
+
+
+# def finding_hello():
+#     word = "Hello"
+#     idx = 1
+#     with open("practice.txt","r") as f:
+#         data = f.read()
+#         words = data.split()
+#         for w in words:
+#             if(w == word):
+#                 print(w)
+#                 idx +=1
+#     print("the word hello is printed", idx,"times")
+            
+            
+# finding_hello()
+        
+        
+        
+        
+        
+# def finding():
+#     i = 1
+#     find_the_word = "Hello"
+#     with open("practice.txt","r") as f:
+#         data = f.read()
+#         words = data.split()
+        
+#         for w in words:
+#             if w == find_the_word:
+#                 print(w)
+#                 i += 1
+#         print("The word ",w,"Is find ",i,"times")    
+# finding()
+
+
+
+
+# with open("practice.txt","r") as f:
+#     data = f.read()
+#     new_data = data.replace("in","im")
+#     print(new_data)
+    
+# with open("practice.txt","w") as f:
+#     f.write(new_data) 
+
+class Student:
+    def __init__(self,name,marks,fee_status):
+        self.name = name
+        self.marks = marks
+        self.fee_status = fee_status
+        
+        
+s1 = Student("jan",91,"Paid")
+s2 = Student("Kani",53,"Unpaid")
+s3 = Student("Pullo",99,"Paid")
+
+print(s1.name,"marks are",s1.marks,"fee are",s1.fee_status)  
+print(s2.name,s2.marks,s2.fee_status)
+print(s1.name,s3.marks,s3.fee_status)
+  
+marks = [101,111,222]
+sum = 0
+
+for numbers in marks:
+    sum = sum + numbers
+print(sum)
+
+
+
+
+class Student:
+    def __init__(self,name):
+        self.name = name
+    @staticmethod  #decorator   ("Decorators allow us to wrap another function in order to ectend the behaviour of the wrapped function ,without permanently modifying it")
+    def college():
+        print("ABC College")
+    
+s1 = Student("babu")
+
+print(s1.name)
+
+        

@@ -24,15 +24,25 @@
 
 #------> write a recursive function to print a;; elements in a list.
 
-def count(a,i):
-    if(i == len(a)):
-        return 
-    print(a[i])
-    print(a , i + 1)
+# def count(a,i):
+#     if(i == len(a)):
+#         return 
+#     print(a[i])
+#     print(a , i + 1)
     
-number = [1,2,3,4,5,6,7,8,9]
+# number = [1,2,3,4,5,6,7,8,9]
 
-count(number , 0)
+# count(number , 0)
+
+
+# _--------->factorial of a number using recrussion<------------
+
+# def factorial(n):
+#     if(n == 0 or n == 1):
+#         return 1 
+#     return factorial(n-1) * n
+    
+# print(factorial(5))
     
         
         
